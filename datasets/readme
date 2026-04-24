@@ -1,1 +1,15 @@
+Dataset Description
 
+The dataset used in Web Shield consists of a multi-class collection of webpage samples, designed to represent both benign and malicious web behaviors. Each sample includes raw HTML content, embedded scripts, and URL features, enabling comprehensive analysis of webpage structure and intent.
+
+The dataset is categorized into the following classes:
+
+Phishing – Pages attempting to steal sensitive user information through deceptive forms
+Cross-Site Scripting (XSS) – Pages containing injected malicious scripts
+Clickjacking – Pages embedding hidden or misleading UI elements (e.g., iframes)
+Cookie Theft – Pages attempting unauthorized access to browser cookies
+Benign (Safe) – Legitimate and non-malicious webpages
+
+To prepare the data for deep learning, preprocessing steps such as HTML parsing, text extraction, tokenization, and embedding generation are applied. This allows the model to learn both structural patterns and semantic relationships within webpage content.
+
+The multi-class nature of the dataset enables the system to perform fine-grained threat classification, improving detection accuracy and interpretability compared to binary classification approaches.
