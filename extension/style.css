@@ -1,0 +1,17 @@
+
+body{
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+color:white;
+font-family:Segoe UI;
+text-align:center;
+width:300px;
+}
+
+button{
+background:#ff4b4b;
+border:none;
+padding:10px;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}

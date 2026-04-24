@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+font-family:Arial;
+background:#1e1e1e;
+color:white;
+text-align:center;
+padding-top:100px;
+}
+.box{
+background:#b30000;
+padding:40px;
+border-radius:10px;
+display:inline-block;
+}
+button{
+margin-top:20px;
+padding:10px 20px;
+font-size:16px;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h1> Dangerous Website Blocked</h1>
+
+<p id="attack"></p>
+
+<button onclick="window.history.back()">Go Back</button>
+
+</div>
+
+<script>
+let params=new URLSearchParams(window.location.search)
+document.getElementById("attack").innerText=
+"Detected Threat: "+params.get("attack")
+</script>
+
+</body>
+</html>
